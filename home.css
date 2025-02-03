@@ -1,0 +1,87 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #933625; /* Brown color */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav .logo img {
+    width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('path_to_your_image') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: left;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    background-color: #933625; /* Brown color */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: #933625; /* Brown color */
+    padding: 10px;
+    color: #F5F5DC; /* Creme color */
+}
+
+.btn-login {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background-color: #333;
+}
+
+/* Footer/End Section */
+footer {
+    background-color: #F5F5DC; /* Creme color */
+    height: 50px;
+}

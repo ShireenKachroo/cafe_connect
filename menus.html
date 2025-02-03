@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Connect | Menu</title>
+    <link rel="stylesheet" href="menus.css">
+</head>
+<body>
+    <div class="topnavbar">
+        <a href="homepage.html">Home</a>
+        <a href="menus.html">Menu</a>
+        <a href="feedback.html">Feedback Form</a>
+        <a href="registration.html">Registration</a>
+    </div>
+
+<!-- Cart Icon -->
+<div class="shopping-cart" id="shopping-cart">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGiUgFrOqMuhNTsK5fHRqwcjeIZ71OwVzEQw&s" alt="Cart Icon">
+    <span id="item-count">0</span>
+</div>
+
+
+<!-- Cart Details -->
+<div id="cart-details" class="cart-details">
+    <h2>Cart Items</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-amount">Total Amount: Rs. 0.00</p>
+    <button id="checkout-button">Checkout</button>
+    <a href="qr.html" id="pay" class="pay">Make Payment</a>
+</div>
+
+    <br><br><br><br><br>
+    <h2><center>DAILY DELIGHTS</center></h2>
+    <div class="menu">
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPJhESbePbWLkqHt_9nCI7F8kbPmmrYCHuVg&s" alt="bread-roll">
+            <h3>Bread Roll</h3>
+            <small>Price: Rs.60</small>
+            <p>Crispy on the outside, delightful on the inside!</p>
+            <button class="add-to-cart" data-name="breadRoll" data-price="60">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5D-nN3i7A099pAqiitNLroL--OqTzHS1APg&s" alt="bread Pakoda">
+            <h3>Bread-Pakoda</h3>
+            <small>Price: Rs.50</small>
+            <p>A delicious combination of mozzarella cheese and fresh veggies.</p>
+            <button class="add-to-cart" data-name="breadPakoda" data-price="50">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvj_-ftYbP6jpd8D4VxLmLIIEhMvkiOraoQ&s" alt="chillyPotato">
+            <h3>Chilly Potato</h3>
+            <small>Price: Rs.60</small>
+            <p>Spicy, crispy potato fries tossed with chili sauce.</p>
+            <button class="add-to-cart" data-name="chillyPotato" data-price="60">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRggwexGT5KqSjeVwI3P0AUynEdZR1MdL2jg&s" alt="chana kulcha">
+            <h3>Chana-Kulcha</h3>
+            <small>Price: Rs.60</small>
+            <p>A classic combo with a flavor punch.</p>
+            <button class="add-to-cart" data-name="chanaKulcha" data-price="60">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROYB0abP505C56V5XfFQDfcsWwMZS70O_D5g&s" alt="chaat">
+            <h3>Chaat</h3>
+            <small>Price: Rs.50</small>
+            <p>Bursting with tangy and spicy flavors!</p>
+            <button class="add-to-cart" data-name="chaat" data-price="50">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfcN0RfeGON2yLvij1bwsRTHFXljQOlS37UQ&s" alt="dahi balla">
+            <h3>Dahi-Bhalla</h3>
+            <small>Price: Rs.80</small>
+            <p>Cool, creamy, and simply delicious.</p>
+            <button class="add-to-cart" data-name="dahiBhalla" data-price="80">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://theovenchef.com/wp-content/uploads/2023/12/veg-maggie-1.png" alt="maggie">
+            <h3>Maggie</h3>
+            <small>Price: Rs.40</small>
+            <p>Your comfort food, served hot and fresh.</p>
+            <button class="add-to-cart" data-name="maggie" data-price="40">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9buve7v0Ok-ZMEYseLAuFX79IoBoUK1r0Bg&s" alt="pizza">
+            <h3>Pizza</h3>
+            <small>Price: Rs.80</small>
+            <p>A delicious combination of mozzarella cheese and fresh veggies.</p>
+            <button class="add-to-cart" data-name="pizza" data-price="80">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzyr-0W5T2kDt50-uTdoRvScuOBjopJo5muQ&s" alt="red Sauce pasta">
+            <h3>Red Sauce Pasta</h3>
+            <small>Price: Rs.60</small>
+            <p>Italian pata dipped in red sauce.</p>
+            <button class="add-to-cart" data-name="pasta" data-price="60">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTp1LRlJkV6ONp-kK-LDDVRS9VoE1nlmvFLA&s" alt="samosa" height="50px">
+            <h3>Samosa</h3>
+            <small>Price: Rs.40</small>
+            <p>A crispy pastry filled with spicy mashed potatoes.</p>
+            <button class="add-to-cart" data-name="samosa" data-price="40">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxHp4rY7B5KroO6kctMkFRupEIpGESP-A3ig&s" alt="sandwich">
+            <h3>Sandwich</h3>
+            <small>Price: Rs.40</small>
+            <p>Fresh veggies and cheese, perfectly layered.</p>
+            <button class="add-to-cart" data-name="sandwich" data-price="40">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfV_grxlEnHnBAzOWDSzuysYsdKlzIMORnaQ&s" alt="masala dosa">
+            <h3>Masala Dosa</h3>
+            <small>Price: Rs.60</small>
+            <p>"South Indian classic with a twist of spice.</p>
+            <button class="add-to-cart" data-name="masala dosa" data-price="60">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <h2><center>SIP & SAVOUR</center></h2>
+    <div class="menu">
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5Ouh5rT2L-Q4znO497zet0Npkq2qHH8Dqw&s" alt="tea">
+            <h3>Tea</h3>
+            <small>Price: Rs.40</small>
+            <p>Warm up with a classic chai.</p>
+            <button class="add-to-cart" data-name="Tea" data-price="40">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIi4k_XrjDzXyNrR9wDN6H-d0y1tJILD1Vlw&s" alt="coldcoffee">
+            <h3>Cold Coffee</h3>
+            <small>Price: Rs.40</small>
+            <p>Beat the heat with this chilled delight.</p>
+            <button class="add-to-cart" data-name="cold coffee" data-price="40">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs4ZlJQ1YF6R_VbrODqO9ZTRxE4Jw9tWBzMg&s" alt="hotCoffee">
+            <h3>Hot Coffee</h3>
+            <small>Price: Rs.30</small>
+            <p>Wake up with a bold, rich brew.</p>
+            <button class="add-to-cart" data-name="hot coffee" data-price="30">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <h2><center>SIP & CRUNCH CORNER</center></h2>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF1RJmMeK38cBNJpuQiuNsFx3J9GeDgNBETw&s" alt="nimbooz">
+            <h3>Nimbooz</h3>
+            <small>Price: Rs.10</small><br><br>
+            <button class="add-to-cart" data-name="Nimbooz" data-price="10">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="data:image/jpeg;base64,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" alt="pepsi">
+            <h3>Pepsi</h3>
+            <small>Price: Rs.60</small><br><br>
+            <button class="add-to-cart" data-name="Pepsi" data-price="60">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsrDcFnc8IvyIXOoRSmVtamDBxj6godhC4bg&s" alt="vanilla">
+            <h3>Vanilla Milkshake</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="vanilla milkshake" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5xBWCQKx6u_nOeYGBJzV1enqazEKONER7xQ&s" alt="butterscotch">
+            <h3>Butterscotch Milkshake</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="butterscotch milkshake" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv9i9xSgkdeaucEn7Q229dRgLkFjqLp0xzPg&s" alt="choco">
+            <h3>Chocolate Milkshake</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="chocolate milkshake" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4sjfZGF4DuT9CAU3KAsll9xczWtolWWzUbw&s" alt="strawberry">
+            <h3>Strawberry Milkshake</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="strawberry milkshake" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG_mGteFRjbxSK6plfNV831DPKNfVMD2S6mQ&s" alt="nescafe1">
+            <h3>Nescafe Intense</h3>
+            <small>Price: Rs.30</small><br><br>
+            <button class="add-to-cart" data-name="nescafe intense" data-price="30">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyim9HfxGgbksEsrLjtDUWbs87PS5s1vMmIg&s" alt="nescafe2">
+            <h3>Nescafe Chilled Latte</h3>
+            <small>Price: Rs.30</small><br><br>
+            <button class="add-to-cart" data-name="nescafe chilled latte" data-price="30">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL4wACPHnlOOOMBs3_dI5ctdZFTOLy_7iLFQ&s" alt="nescafe3">
+            <h3>Nescafe Hazelnut</h3>
+            <small>Price: Rs.30</small><br><br>
+            <button class="add-to-cart" data-name="nescafe hazelnut" data-price="30">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz7WTnULCUQ0PqCbMagsQmri3_6iYjayVywg&s" alt="kurkure">
+            <h3>Kurkure</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="kurkure" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3UNsshyD-VeKv_SgfZLMabh1dShh-S96ppQ&s" alt="nescafe3">
+            <h3>Blue Lays</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="blue lays" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlvCeLKD52Ptu5Yv4z8XpJ6NfW0Yn81M38CQ&s" alt="Rlays">
+            <h3>Red Lays</h3>
+            <small>Price: Rs.20</small><br><br>
+            <button class="add-to-cart" data-name="red lays" data-price="20">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1j-VMn1dHIu-v5iHSWxl4mWKxDxL3JpcAgg&s" alt="nescafe3">
+            <h3>Hide & Seek Biscuit</h3>
+            <small>Price: Rs.30</small><br><br>
+            <button class="add-to-cart" data-name="hide & seek biscuit" data-price="30">Add to Cart</button>
+        </div>
+
+
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJB8dlwSjOyNaKYmUO_CBC4Q4oboul2B2rw&s" alt="GD_biiscuit">
+            <h3>Good Day Biscuit</h3>
+            <small>Price: Rs.10</small><br><br>
+            <button class="add-to-cart" data-name="good day biscuit" data-price="10">Add to Cart</button>
+        </div>
+    </div>
+<script src="menus.js"></script>
+</body>
+</html>
+
+
